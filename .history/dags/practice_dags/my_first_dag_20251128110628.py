@@ -8,7 +8,7 @@ def my_first_dag():
     def my_task_1():
         return {"my_word" : "Airflow!"}
     
-    _my_task_1 = my_task_1() # Call the task to create the task instance use that can be linked later
+    _my_task_1 = my_task_1()
 
     @task 
     def my_task_2(my_dict):
